@@ -17,7 +17,7 @@ import { HttpHeaders} from '@angular/common/http';
 export class GenericoService {
 
 
-  api="http://localhost/";
+  api="http://localhost/SegundoParcialLab4/backEndComanda/";
   //api="https://dvlacomanda.000webhostapp.com/backEndComanda/"
   
   constructor(public http:Http) { }

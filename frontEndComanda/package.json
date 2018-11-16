@@ -1,0 +1,22 @@
+{
+  "name": "segundoparciallab4",
+  "version": "1.0.0",
+  "description": "Segundo Parcial Lab 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianVogel/SegundoParcialLab4.git"
+  },
+  "author": "Damian Vogel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianVogel/SegundoParcialLab4/issues"
+  },
+  "homepage": "https://github.com/DamianVogel/SegundoParcialLab4#readme",
+  "devDependencies": {
+    "@angular/cli": "^7.0.6"
+  }
+}
