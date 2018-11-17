@@ -1,2 +1,2 @@
-# SegundoParcialLab4
+# SegundoParcial
 Segundo parcial de Laboratorio 4
