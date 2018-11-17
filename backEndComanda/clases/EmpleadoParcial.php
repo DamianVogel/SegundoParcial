@@ -173,7 +173,7 @@ class EmpleadoParcial
 	{
 		try{
 			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-			$consulta =$objetoAccesoDato->RetornarConsulta("SELECT  * from segundoparcial WHERE nombre=:nombre and clave=:clave");
+			$consulta =$objetoAccesoDato->RetornarConsulta("SELECT  * from usuarios WHERE nombre=:nombre and clave=:clave");
 			$consulta->bindValue(':nombre', $usuario, PDO::PARAM_STR);
 			$consulta->bindValue(':clave', $clave, PDO::PARAM_STR);
 			$consulta->execute();

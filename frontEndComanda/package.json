@@ -18,5 +18,8 @@
   "homepage": "https://github.com/DamianVogel/SegundoParcialLab4#readme",
   "devDependencies": {
     "@angular/cli": "^7.0.6"
+  },
+  "dependencies": {
+    "@angular-devkit/build-angular": "^0.10.6"
   }
 }
