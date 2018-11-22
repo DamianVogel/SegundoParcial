@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { LoginService } from './servicios/login.service';
 import { GenericoService } from './servicios/generico.service';
+import { UsuarioSegParComponent } from './componentes/usuario-seg-par/usuario-seg-par.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    UsuarioSegParComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { GenericoService } from './servicios/generico.service';
       //,{path: 'Registro' , component: RegistroComponent}
       //,{path: 'Side' , component: SidenavComponent, canActivate: [VerificarJWTService]}
       //,{path: 'Reporte' , component: ReporteHighchartComponent}
-      //,{path: 'SegPar' , component: UsuarioSegParComponent}
+      ,{path: 'SegPar' , component: UsuarioSegParComponent}
     ]),
   ],
   providers: [
