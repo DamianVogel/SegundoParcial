@@ -14,6 +14,7 @@ require_once './clases/AutentificadorJWT.php';
 require_once './clases/MWparaCORS.php';
 require_once './clases/MWparaAutentificar.php';
 require_once './clases/MWLaComanda.php';
+require_once './clases/AltaWebApi.php';
 
 
 $config['displayErrorDetails'] = true;
@@ -97,6 +98,7 @@ $app->group('/Mesas', function(){
 
 $app->group('/Sesion', function(){
   $this->post('/',\SesionApi::class . ':LoginSegundoParcial');
+  $this->post('/AltaWeb',\AltaWebApi::class . ':AltaWebSegundoParcial');
   $this->put('/Salir', \SesionApi::class . ':CerrarSesion');
   $this->post('/CambiarAvatar', \EmpleadoApi::class . ':CambiarAvatarApi');
 });

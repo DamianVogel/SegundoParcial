@@ -1,3 +1,34 @@
-<p>
-  alta-servicio-web works!
-</p>
+<style>
+  a { cursor: pointer }
+</style>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+        
+        <h3>ALTA SERVICIO WEB</h3>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label >Nombre del servicio WEB</label>
+            <input type="text" formControlName="webname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.webname.errors }" />
+            <div *ngIf="submitted && f.webname.errors" class="invalid-feedback">
+              <div *ngIf="f.webname.errors.required">Nombre es requerido</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label >CANTIDAD DE MEGAS</label>
+            <input type="number" formControlName="megas" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.megas.errors }" />
+            <div *ngIf="submitted && f.megas.errors" class="invalid-feedback">
+              <div *ngIf="f.megas.errors.required">El valor  debe ser un entero</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

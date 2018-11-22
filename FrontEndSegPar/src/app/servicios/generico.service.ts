@@ -31,23 +31,23 @@ export class GenericoService {
   }
 
 
-  public httpPostHeader(metodo:string, objeto:any):Observable<any>
-  { 
+  // public httpPostHeader(metodo:string, objeto:any):Observable<any>
+  // { 
    
     
-    console.log(objeto);
+  //   console.log(objeto);
     
-    var headers = new Headers();
-    headers.append('Content-Type', 'application/x-www-form-urlencoded');
-    //headers.append('avatar',objeto);
+  //   var headers = new Headers();
+  //   headers.append('Content-Type', 'application/x-www-form-urlencoded');
+  //   //headers.append('avatar',objeto);
     
-    return this.http.post(
-                          this.api + metodo
-                          ,objeto
-                          ,{ headers: headers }
-                          )
-    .pipe(catchError(this.handleError));
-  }
+  //   return this.http.post(
+  //                         this.api + metodo
+  //                         ,objeto
+  //                         ,{ headers: headers }
+  //                         )
+  //   .pipe(catchError(this.handleError));
+  // }
 
 
   public httpPost(metodo:string, objeto:any):Observable<any>
