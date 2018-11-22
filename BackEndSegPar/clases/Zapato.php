@@ -28,6 +28,15 @@ class Zapato
         return $objetoAccesoDato->RetornarUltimoIdInsertado();
     }
 
+    
+    public static function TraerTodosLosZapatos() {
+            $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+        	$consulta =$objetoAccesoDato->RetornarConsulta("SELECT * from zapatos");  
+        	$consulta->execute();
+        	$zapatos= $consulta->fetchAll(PDO::FETCH_CLASS, "Zapato");
+                    
+            return $zapatos;									
+        }
 
 // public static function TraerTodosLasWebs() {
 //     $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 

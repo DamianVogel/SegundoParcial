@@ -99,6 +99,7 @@ $app->group('/Mesas', function(){
 
 $app->group('/Sesion', function(){
   $this->get('/TodasWebs',\AltaWebApi::class . ':ListadoServicios');
+  $this->get('/TodosZapatos',\ZapatoApi::class . ':ListadoZapatos');
   $this->post('/',\SesionApi::class . ':LoginSegundoParcial');
   $this->post('/AltaWeb',\AltaWebApi::class . ':AltaWebSegundoParcial');
   $this->post('/ZapatoAlta',\ZapatoApi::class . ':AltaZapato');

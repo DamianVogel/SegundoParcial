@@ -17,6 +17,7 @@ import { AltaServicioWebComponent } from './componentes/alta-servicio-web/alta-s
 import { ListawebComponent } from './componentes/listaweb/listaweb.component';
 import { MostrarmbPipe } from './pipes/mostrarmb.pipe';
 import { AltaZapatoComponent } from './componentes/alta-zapato/alta-zapato.component';
+import { ListaZapatosComponent } from './componentes/lista-zapatos/lista-zapatos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AltaZapatoComponent } from './componentes/alta-zapato/alta-zapato.compo
     AltaServicioWebComponent,
     ListawebComponent,
     MostrarmbPipe,
-    AltaZapatoComponent
+    AltaZapatoComponent,
+    ListaZapatosComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { AltaZapatoComponent } from './componentes/alta-zapato/alta-zapato.compo
       //,{path: 'Side' , component: SidenavComponent, canActivate: [VerificarJWTService]}
       ,{path: 'AltaBase' , component: AltaBaseComponent}
       ,{path: 'SegPar' , component: UsuarioSegParComponent}
+      ,{path: 'AltaZapato' , component: AltaZapatoComponent}
     ]),
   ],
   providers: [

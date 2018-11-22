@@ -43,11 +43,11 @@ public static function AltaZapato($request, $response, $args)
 
 
 
-public static function ListadoServicios($request, $response, $args)
+public static function ListadoZapatos($request, $response, $args)
 {
     $objDelaRespuesta=new stdclass();
        
-    $objDelaRespuesta=Web::TraerTodosLasWebs();
+    $objDelaRespuesta=Zapato::TraerTodosLosZapatos();
 
     return $response->withJson($objDelaRespuesta, 200);
 
