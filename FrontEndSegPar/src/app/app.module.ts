@@ -35,6 +35,7 @@ import { AltaServicioWebComponent } from './componentes/alta-servicio-web/alta-s
       ,{path: 'Login' , component: LoginComponent}
       ,{path: 'AltaServidor' , component: AltaServidorComponent}
       ,{path: 'AltaAlmacenamiento' , component: AltaAlmacenamientoComponent}
+      ,{path: 'AltaServicioWeb' , component: AltaServicioWebComponent}
       //,{path: 'Side' , component: SidenavComponent, canActivate: [VerificarJWTService]}
       ,{path: 'AltaBase' , component: AltaBaseComponent}
       ,{path: 'SegPar' , component: UsuarioSegParComponent}

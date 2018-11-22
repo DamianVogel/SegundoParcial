@@ -40,7 +40,7 @@ export class UsuarioSegParComponent implements OnInit {
       break;
     
       case 'servicioweb':
-        this.router.navigate(['ServicioWeb']);
+        this.router.navigate(['AltaServicioWeb']);
       break;
     
     
