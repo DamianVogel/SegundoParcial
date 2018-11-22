@@ -14,6 +14,7 @@ import { AltaServidorComponent } from './componentes/alta-servidor/alta-servidor
 import { AltaBaseComponent } from './componentes/alta-base/alta-base.component';
 import { AltaAlmacenamientoComponent } from './componentes/alta-almacenamiento/alta-almacenamiento.component';
 import { AltaServicioWebComponent } from './componentes/alta-servicio-web/alta-servicio-web.component';
+import { ListawebComponent } from './componentes/listaweb/listaweb.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AltaServicioWebComponent } from './componentes/alta-servicio-web/alta-s
     AltaServidorComponent,
     AltaBaseComponent,
     AltaAlmacenamientoComponent,
-    AltaServicioWebComponent
+    AltaServicioWebComponent,
+    ListawebComponent
   ],
   imports: [
     BrowserModule,

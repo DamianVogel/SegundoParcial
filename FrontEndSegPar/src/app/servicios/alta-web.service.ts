@@ -18,6 +18,13 @@ export class AltaWebService {
 
   }
 
+  public ServiceTraerWeb():Observable<any>{
+
+    return this._generico.httpGet("Sesion/TodasWebs")
+    .pipe(data =>{return data;}); 
+
+  }
+
 
 
 
