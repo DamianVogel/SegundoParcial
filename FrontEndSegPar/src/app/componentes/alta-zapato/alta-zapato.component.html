@@ -17,12 +17,46 @@
           </div>
 
           <div class="form-group">
-            <label >CANTIDAD DE MEGAS</label>
-            <input type="number" formControlName="megas" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.megas.errors }" />
-            <div *ngIf="submitted && f.megas.errors" class="invalid-feedback">
-              <div *ngIf="f.megas.errors.required">El valor  debe ser un entero</div>
+            <label >nombre</label>
+            <input type="text" formControlName="nombre" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" />
+            <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+              <div *ngIf="f.nombre.errors.required">nombre es obligatorio</div>
             </div>
           </div>
+
+          <div class="form-group">
+            <label >fec ing</label>
+            <input type="text" formControlName="fecing" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fecing.errors }" />
+            <div *ngIf="submitted && f.fecing.errors" class="invalid-feedback">
+              <div *ngIf="f.fecing.errors.required">fecha es obligatorio</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label >Local de venta</label>
+            <input type="text" formControlName="local" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.local.errors }" />
+            <div *ngIf="submitted && f.local.errors" class="invalid-feedback">
+              <div *ngIf="f.local.errors.required">fecha es obligatorio</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label >Precio</label>
+            <input type="text" formControlName="precio" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.precio.errors }" />
+            <div *ngIf="submitted && f.precio.errors" class="invalid-feedback">
+              <div *ngIf="f.precio.errors.required">Precio es obligatorio</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label >genero</label>
+            <input type="text" formControlName="genero" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.genero.errors }" />
+            <div *ngIf="submitted && f.genero.errors" class="invalid-feedback">
+              <div *ngIf="f.genero.errors.required">Genero es obligatorio</div>
+            </div>
+          </div>
+
+
 
           <div class="form-group">
             <button [disabled]="loading" class="btn btn-primary">Enviar</button>
