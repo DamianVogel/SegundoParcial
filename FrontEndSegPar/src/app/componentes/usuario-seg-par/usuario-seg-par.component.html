@@ -1,12 +1,12 @@
-<p>
+<!-- <p>
   usuario-seg-par works!
-</p>
+</p> -->
 
 <h4>{{perfil}}</h4>
-
+ 
 <div *ngIf="perfil != 'free'"> 
-  <button (click)="Alta('servidor')"> INSTANCIA DE SERVIDORES</button>
-  <button (click)="Alta('base')"> BASE DE DATOS</button>
-  <button (click)="Alta('almacenamiento')"> ALMACENAMIENTO DE ARCHIVOS</button>
-  <button (click)="Alta('servicioweb')">SERVICIO WEB</button>
-</div>
+  <button *ngIf="perfil == 'admin'" (click)="Alta('estadistica')"> VER ESTADISTICA</button>
+  <button (click)="Alta('compras')"> HACER COMPRAS</button>
+  <button *ngIf="perfil == 'admin' || perfil == 'vendedor'" (click)="Alta('productos')"> CARGAS PRODUCTOS</button>
+  <!-- <button (click)="Alta('servicioweb')">SERVICIO WEB</button> -->
+</div> 

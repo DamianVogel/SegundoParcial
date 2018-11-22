@@ -107,7 +107,7 @@ public function LoginSegundoParcial($request, $response, $args) {
             }                           
             else{
                 $respuesta = false;
-                return $response->withJson($respuesta, 400);	
+                return $response->withJson($respuesta, 201);	
             }
 
 

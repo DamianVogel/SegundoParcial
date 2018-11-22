@@ -57,10 +57,11 @@ export class LoginComponent implements OnInit {
 
         this._login.ServiceLogin(datosLogin).subscribe( data =>{
             
-            console.log(data._body);
+                //JSON.parse(data.respuesta);
             
+                console.log(data);
             
-            if(data._body)
+            if(data.status == 200)
             {
                 localStorage.setItem('usuario',data._body);
             //console.log(data._body);
@@ -102,7 +103,7 @@ export class LoginComponent implements OnInit {
         //let datosLogin = new Usuario('pro', '1234');
 
         this.loginForm = this.formBuilder.group({
-            username: ['pro', Validators.required],
+            username: ['cliente', Validators.required],
             password: ['1234', Validators.required]
         });
 
@@ -123,7 +124,7 @@ export class LoginComponent implements OnInit {
         let datosLogin = new Usuario('normal', '1234');
 
         this.loginForm = this.formBuilder.group({
-            username: ['normal', Validators.required],
+            username: ['administrador', Validators.required],
             password: ['1234', Validators.required]
         });
 
@@ -144,7 +145,7 @@ export class LoginComponent implements OnInit {
         let datosLogin = new Usuario('gratis', '1234');
 
         this.loginForm = this.formBuilder.group({
-            username: ['gratis', Validators.required],
+            username: ['vendedor', Validators.required],
             password: ['1234', Validators.required]
         });
 

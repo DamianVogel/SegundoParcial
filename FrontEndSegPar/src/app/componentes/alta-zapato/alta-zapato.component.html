@@ -9,10 +9,10 @@
         <h3>ALTA DEL ZAPATO</h3>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
-            <label >Nombre del servicio WEB</label>
-            <input type="text" formControlName="webname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.webname.errors }" />
-            <div *ngIf="submitted && f.webname.errors" class="invalid-feedback">
-              <div *ngIf="f.webname.errors.required">Nombre es requerido</div>
+            <label >codigo</label>
+            <input type="text" formControlName="codMod" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.codMod.errors }" />
+            <div *ngIf="submitted && f.codMod.errors" class="invalid-feedback">
+              <div *ngIf="f.codMod.errors.required">modelo es requerido</div>
             </div>
           </div>
 

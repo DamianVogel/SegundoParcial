@@ -15,6 +15,7 @@ require_once './clases/MWparaCORS.php';
 require_once './clases/MWparaAutentificar.php';
 require_once './clases/MWLaComanda.php';
 require_once './clases/AltaWebApi.php';
+require_once './clases/ZapatoApi.php';
 
 
 $config['displayErrorDetails'] = true;
@@ -100,6 +101,7 @@ $app->group('/Sesion', function(){
   $this->get('/TodasWebs',\AltaWebApi::class . ':ListadoServicios');
   $this->post('/',\SesionApi::class . ':LoginSegundoParcial');
   $this->post('/AltaWeb',\AltaWebApi::class . ':AltaWebSegundoParcial');
+  $this->post('/ZapatoAlta',\ZapatoApi::class . ':AltaZapato');
   $this->put('/Salir', \SesionApi::class . ':CerrarSesion');
   $this->post('/CambiarAvatar', \EmpleadoApi::class . ':CambiarAvatarApi');
 });
