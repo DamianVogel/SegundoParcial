@@ -38,6 +38,12 @@ export class UsuarioSegParComponent implements OnInit {
       case 'almacenamiento':
         this.router.navigate(['AltaAlmacenamiento']);
       break;
+    
+      case 'servicioweb':
+        this.router.navigate(['ServicioWeb']);
+      break;
+    
+    
     }
 
 

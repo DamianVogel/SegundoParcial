@@ -13,6 +13,7 @@ import { UsuarioSegParComponent } from './componentes/usuario-seg-par/usuario-se
 import { AltaServidorComponent } from './componentes/alta-servidor/alta-servidor.component';
 import { AltaBaseComponent } from './componentes/alta-base/alta-base.component';
 import { AltaAlmacenamientoComponent } from './componentes/alta-almacenamiento/alta-almacenamiento.component';
+import { AltaServicioWebComponent } from './componentes/alta-servicio-web/alta-servicio-web.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AltaAlmacenamientoComponent } from './componentes/alta-almacenamiento/a
     UsuarioSegParComponent,
     AltaServidorComponent,
     AltaBaseComponent,
-    AltaAlmacenamientoComponent
+    AltaAlmacenamientoComponent,
+    AltaServicioWebComponent
   ],
   imports: [
     BrowserModule,
