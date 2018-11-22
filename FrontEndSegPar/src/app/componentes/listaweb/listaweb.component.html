@@ -2,4 +2,4 @@
   listaweb works!
 </p>
 
-<p *ngFor="let web of listado">{{web.idusuario}},{{web.nombre}}</p>
+<p *ngFor="let web of listado">{{web.idusuario}},{{web.nombre}}, {{web.megas | mostrarmb: web.megas}} </p>
