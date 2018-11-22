@@ -17,10 +17,31 @@ export class UsuarioSegParComponent implements OnInit {
     ) { 
       this.perfil = JSON.parse(localStorage.getItem('usuario'));
       this.perfil = this.perfil['datos'].tipo;
-      
+
     }
 
   ngOnInit() {
+  }
+
+
+  Alta(opcion){
+    switch(opcion){
+      case 'servidor':
+        alert("servidor");
+      break;
+
+      case 'base':
+        alert("base");
+      break;
+
+      case 'almacenamiento':
+        alert("almacenamiento");
+      break;
+    }
+
+
+
+
   }
 
 }

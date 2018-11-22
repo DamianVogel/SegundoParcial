@@ -3,3 +3,9 @@
 </p>
 
 <h4>{{perfil}}</h4>
+
+<div *ngIf="perfil != 'free'"> 
+  <button (click)="Alta('servidor')"> INSTANCIA DE SERVIDORES</button>
+  <button (click)="Alta('base')"> BASE DE DATOS</button>
+  <button (click)="Alta('almacenamiento')"> ALMACENAMIENTO DE ARCHIVOS</button>
+</div>
