@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuario-seg-par',
@@ -11,7 +12,7 @@ export class UsuarioSegParComponent implements OnInit {
 
 
   constructor(
-    
+      public router: Router
     
   
     ) { 
@@ -27,15 +28,15 @@ export class UsuarioSegParComponent implements OnInit {
   Alta(opcion){
     switch(opcion){
       case 'servidor':
-        alert("servidor");
+        this.router.navigate(['AltaServidor']);
       break;
 
       case 'base':
-        alert("base");
+        this.router.navigate(['AltaBase']);
       break;
 
       case 'almacenamiento':
-        alert("almacenamiento");
+        this.router.navigate(['AltaAlmacenamiento']);
       break;
     }
 
