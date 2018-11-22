@@ -97,6 +97,7 @@ $app->group('/Mesas', function(){
 // });
 
 $app->group('/Sesion', function(){
+  $this->get('/TodasWebs',\AltaWebApi::class . ':ListadoServicios');
   $this->post('/',\SesionApi::class . ':LoginSegundoParcial');
   $this->post('/AltaWeb',\AltaWebApi::class . ':AltaWebSegundoParcial');
   $this->put('/Salir', \SesionApi::class . ':CerrarSesion');

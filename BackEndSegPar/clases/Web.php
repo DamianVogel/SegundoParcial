@@ -2,6 +2,7 @@
 
 class Web
 {
+    public $id;
     public $idusuario;
     public $nombre;
     public $megas;
@@ -20,16 +21,14 @@ class Web
     }
 
 
-// public static function TraerTodosLosProductos() 
-// {
-//     $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-// 	$consulta =$objetoAccesoDato->RetornarConsulta("SELECT * from productos ");  
-// 	$consulta->execute();
-// 	$producto= $consulta->fetchAll(PDO::FETCH_CLASS, "Productos");
+public static function TraerTodosLasWebs() {
+    $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+	$consulta =$objetoAccesoDato->RetornarConsulta("SELECT * from servicioweb");  
+	$consulta->execute();
+	$webs= $consulta->fetchAll(PDO::FETCH_CLASS, "Web");
             
-//     return $producto;
-									
-// }
+    return $webs;									
+}
 
 // public static function TraerProducto($nombre) 
 // {
