@@ -11,7 +11,7 @@
   <button (click)="ProdLocal('local')">Prod Local</button>
 
   
-  <p  appColor [tipo]  *ngFor="let zapato of (listado | filtroLocal: local1)">{{zapato.codMod}},{{zapato.nombre}}, {{zapato.precioCosto | precio: zapato.precioCosto}} </p>
+  <p  appColor [tipo]="zapato.genero"  *ngFor="let zapato of (listado | filtroLocal: local1)">{{zapato.codMod}},{{zapato.nombre}}, {{zapato.precioCosto | precio: zapato.precioCosto}}, {{zapato.genero}} </p>
 
 
 </div> 

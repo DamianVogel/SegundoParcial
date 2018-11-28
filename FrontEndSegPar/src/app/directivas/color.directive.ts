@@ -16,11 +16,11 @@ export class ColorDirective {
 
     switch(this.tipo)
     {
-      case "hombre": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'yellow');
+      case "masculino": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'yellow');
       break;
-      case "mujer": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'red');
+      case "fem": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'red');
       break;
-      case "unisex": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'grey');
+      case "masc": this.renderer.setElementStyle( this.element.nativeElement, 'color', 'grey');
       break;
  
     }
