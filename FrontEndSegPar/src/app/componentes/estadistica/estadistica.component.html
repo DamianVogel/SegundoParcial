@@ -1,0 +1,18 @@
+<div > 
+  
+  <button (click)="ProdDif()"> Productos Diferentes entre locales</button>
+  <button (click)="ProdRep()"> Productos repetidos</button>
+  <!-- <button (click)="Alta('servicioweb')">SERVICIO WEB</button> -->
+  
+  ELIJA EL LOCAL:
+  <select [(ngModel)]="local1" >
+    <option  *ngFor="let local of locales">             {{local}}</option>
+  </select>
+  <button (click)="ProdLocal('local')">Prod Local</button>
+
+  
+  <p  appColor [tipo]  *ngFor="let zapato of (listado | filtroLocal: local1)">{{zapato.codMod}},{{zapato.nombre}}, {{zapato.precioCosto | precio: zapato.precioCosto}} </p>
+
+
+</div> 
+

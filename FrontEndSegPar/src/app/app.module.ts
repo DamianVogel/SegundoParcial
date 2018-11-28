@@ -18,6 +18,10 @@ import { ListawebComponent } from './componentes/listaweb/listaweb.component';
 import { MostrarmbPipe } from './pipes/mostrarmb.pipe';
 import { AltaZapatoComponent } from './componentes/alta-zapato/alta-zapato.component';
 import { ListaZapatosComponent } from './componentes/lista-zapatos/lista-zapatos.component';
+import { EstadisticaComponent } from './componentes/estadistica/estadistica.component';
+import { FiltroLocalPipe } from './pipes/filtro-local.pipe';
+import { PrecioPipe } from './pipes/precio.pipe';
+import { ColorDirective } from './directivas/color.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { ListaZapatosComponent } from './componentes/lista-zapatos/lista-zapatos
     ListawebComponent,
     MostrarmbPipe,
     AltaZapatoComponent,
-    ListaZapatosComponent
+    ListaZapatosComponent,
+    EstadisticaComponent,
+    FiltroLocalPipe,
+    PrecioPipe,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
@@ -48,6 +56,7 @@ import { ListaZapatosComponent } from './componentes/lista-zapatos/lista-zapatos
       ,{path: 'AltaBase' , component: AltaBaseComponent}
       ,{path: 'SegPar' , component: UsuarioSegParComponent}
       ,{path: 'AltaZapato' , component: AltaZapatoComponent}
+      ,{path: 'Estadistica' , component: EstadisticaComponent}
     ]),
   ],
   providers: [

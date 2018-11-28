@@ -27,8 +27,8 @@ export class UsuarioSegParComponent implements OnInit {
 
   Alta(opcion){
     switch(opcion){
-      case 'servidor':
-        this.router.navigate(['AltaServidor']);
+      case 'estadistica':
+        this.router.navigate(['Estadistica']);
       break;
 
       case 'base':
